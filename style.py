@@ -4,7 +4,7 @@ import numpy as np, scipy.misc
 from src.optimize import optimize
 from argparse import ArgumentParser
 from src.utils import save_img, get_img, exists, list_files
-import src.evaluate
+import evaluate
 
 CONTENT_WEIGHT = 7.5e0
 STYLE_WEIGHT = 1e2
