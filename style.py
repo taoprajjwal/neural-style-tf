@@ -1,11 +1,10 @@
 from __future__ import print_function
 import sys, os, pdb
-sys.path.insert(0, 'src')
 import numpy as np, scipy.misc 
-from optimize import optimize
+from src.optimize import optimize
 from argparse import ArgumentParser
-from utils import save_img, get_img, exists, list_files
-import evaluate
+from src.utils import save_img, get_img, exists, list_files
+import src.evaluate
 
 CONTENT_WEIGHT = 7.5e0
 STYLE_WEIGHT = 1e2
