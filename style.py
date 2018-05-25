@@ -165,5 +165,5 @@ def main():
     print("Training complete. For evaluation:\n    `%s`" % cmd_text)
 
 if __name__ == '__main__':
-    prtin("launched")
+    print("launched")
     main()
