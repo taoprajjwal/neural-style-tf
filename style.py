@@ -142,6 +142,8 @@ def main():
         options.tv_weight,
         options.vgg_path
     ]
+    
+    print("kwargs loaded")
 
     for preds, losses, i, epoch in optimize(*args, **kwargs):
         style_loss, content_loss, tv_loss, loss = losses
@@ -163,4 +165,5 @@ def main():
     print("Training complete. For evaluation:\n    `%s`" % cmd_text)
 
 if __name__ == '__main__':
+    prtin("launched")
     main()
