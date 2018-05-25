@@ -111,7 +111,7 @@ def optimize(content_targets, style_target, content_weight, style_weight,
                 feed_dict = {
                    X_content:X_batch
                 }
-                print("start training)
+                print("start training")
                 train_step.run(feed_dict=feed_dict)
                 end_time = time.time()
                 delta_time = end_time - start_time
